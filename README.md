@@ -1,10 +1,24 @@
-# DivčiCasa Guest Guide
+# DivčiCasa Guest Guide v1.1
 
-Prva verzija digitalnog vodiča za apartman F7.
+Premium početna verzija za apartman F7.
 
-Stranice:
+## Rute
 - `/`
 - `/f7`
 - `/apartman/f7`
 
-Šifre za ulazak nisu ubačene u javni deo sajta.
+## Šta je novo
+- DivčiCasa logo
+- Premium dizajn
+- Wi‑Fi Copy dugmad
+- Privatna sekcija za šifre
+- Restoran Divčibar
+- Vila Plamenac
+- Maxi / Breza / Jutro
+- Quad Safari
+- Jahanje
+- Google recenzije
+- Navigacije
+
+## Važno
+Ova verzija je javna; privatne šifre su sakrivene iza dugmeta, ali nisu sistemski zaključane. Kasnije pravimo pravi privatni pristup.

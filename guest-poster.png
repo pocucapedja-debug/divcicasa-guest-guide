@@ -1,0 +1,290 @@
+'use client'
+
+import { useState } from 'react'
+import {
+  Wifi, Phone, MapPin, Star, Home, Utensils, Trees, Gift, MessageCircle,
+  Copy, KeyRound, Lock, ShoppingBag, Mountain, Instagram, ChevronDown
+} from 'lucide-react'
+
+const apartment = {
+  id: 'F7',
+  name: 'Apartman F7',
+  wifiName: 'A1_SRB_B9F7D3',
+  wifiPassword: '4KFhG7Tf',
+  apartmentCode: '8657',
+  buildingCode: '0651#0651#',
+  hostPhone: '+381 64 208 2838',
+  hostWa: '381642082838',
+  reviewUrl: 'https://maps.app.goo.gl/d55AtSNFWRUn9yaBA?g_st=ic',
+  siteUrl: 'https://divcicasa.vercel.app/',
+  instagram: 'https://www.instagram.com/divcicasa/',
+  divcigora: 'https://maps.app.goo.gl/1E7t1q8tLdbTM8gD6',
+  dsr: 'https://maps.app.goo.gl/4UvyXT27Vp5wnQ9v7'
+}
+
+const food = [
+  {
+    title: 'Restoran Divčibar',
+    tag: 'Domaća kuhinja',
+    text: 'Planinski restoran i jedna od glavnih preporuka za ručak, večeru i predah tokom boravka na Divčibarama.',
+    maps: 'https://maps.app.goo.gl/G2eXxA4KY4WizN959',
+    image: '/images/divcibar-hero.png',
+    actions: [{ label: 'Navigacija', href: 'https://maps.app.goo.gl/G2eXxA4KY4WizN959' }]
+  },
+  {
+    title: 'Vila Plamenac',
+    tag: 'Preporuka DivčiCasa',
+    text: 'Moderan planinski restoran sa toplim ambijentom, kaminom, doručkom i domaćim specijalitetima. Radnim danima 08–20h, vikendom 08–21h.',
+    maps: 'https://maps.app.goo.gl/g3YKSQAkZYhcjATr6',
+    image: '/images/guest-poster.png',
+    actions: [
+      { label: 'Navigacija', href: 'https://maps.app.goo.gl/g3YKSQAkZYhcjATr6' },
+      { label: 'Pozovi', href: 'tel:+381646439766' },
+      { label: 'WhatsApp', href: 'https://wa.me/381646439766' }
+    ]
+  }
+]
+
+const shops = [
+  { title: 'Maxi prodavnica', subtitle: 'Namirnice i osnovne potrepštine', href: 'https://maps.app.goo.gl/c44wZ7aZpSfL9A6z8' },
+  { title: 'Breza', subtitle: 'Prodavnica u blizini', href: 'https://maps.app.goo.gl/PWYtgKjM7LgqCSMj6' },
+  { title: 'Jutro prodavnica', subtitle: 'Prodavnica za svakodnevne potrebe', href: 'https://maps.app.goo.gl/7CgdyKnjJtze1MwN6' },
+]
+
+const activities = [
+  {
+    emoji: '🏍',
+    title: 'Quad Safari Divčibare',
+    tag: '10% popusta za goste DivčiCasa',
+    text: 'Adrenalinska vožnja kroz prirodu. Kontakt: Dejan Mitrović, +381 63 535 559.',
+    actions: [{ label: 'Pozovi', href: 'tel:+38163535559' }]
+  },
+  {
+    emoji: '🏇',
+    title: 'Jahanje konja',
+    tag: '@divcibare.jahanje',
+    text: 'Rekreativno jahanje za decu, porodice i početnike. Kontakt: +381 61 259 5322.',
+    actions: [
+      { label: 'Navigacija', href: 'https://maps.app.goo.gl/36p8ry898vgiq4F27' },
+      { label: 'Pozovi', href: 'tel:+381612595322' },
+      { label: 'Instagram', href: 'https://www.instagram.com/divcibare.jahanje/' }
+    ]
+  },
+  {
+    emoji: '🎿',
+    title: 'Ski Resort Crni Vrh',
+    tag: '800 m od DivčiCasa',
+    text: 'Žičara, plava i crvena staza, ski škole i noćno skijanje petkom i subotom 18–21h. Kontakt: +381 63 444 066.',
+    actions: [{ label: 'Pozovi', href: 'tel:+38163444066' }]
+  },
+  {
+    emoji: '🧗',
+    title: 'Porodične aktivnosti',
+    tag: 'Za decu i porodice',
+    text: 'Avantura park, igrališta, sankanje, bicikli, šetnje i sadržaji za decu.',
+    actions: []
+  }
+]
+
+const comingRoutes = [
+  ['🥾', 'Preporučene šetnje', 'Uskoro dodajemo lično proverene rute i prečice.'],
+  ['🌅', 'Vidikovci i zalasci', 'Domaćin preporučuje najlepše tačke za fotografisanje.'],
+  ['📸', 'Photo spots', 'Mesta za lepe fotografije na Divčibarama.'],
+]
+
+function copyText(text) {
+  if (typeof navigator !== 'undefined' && navigator.clipboard) {
+    navigator.clipboard.writeText(text)
+  }
+}
+
+function ActionButton({ href, children, light }) {
+  return <a className={light ? 'btn light' : 'btn'} href={href} target={href?.startsWith('http') ? '_blank' : undefined}>{children}</a>
+}
+
+export default function GuideApp() {
+  const [showCodes, setShowCodes] = useState(false)
+  const waHost = `https://wa.me/${apartment.hostWa}?text=Pozdrav,%20nalazim%20se%20u%20apartmanu%20F7.`
+
+  return (
+    <>
+      <header className="hero">
+        <nav className="topbar">
+          <a className="brand" href="#">
+            <img src="/images/logo-light.jpg" alt="DivčiCasa logo" />
+          </a>
+          <a className="topPill" href={apartment.instagram} target="_blank"><Instagram size={16}/> Instagram</a>
+        </nav>
+
+        <div className="heroInner">
+          <p className="eyebrow">Dobro došli</p>
+          <h1>{apartment.name}</h1>
+          <p className="heroLead">Vaš digitalni vodič kroz boravak na Divčibarama – Wi‑Fi, kontakt, lokacije, restorani, aktivnosti i preporuke domaćina.</p>
+          <div className="heroActions">
+            <a href="#wifi"><Wifi size={18}/> Wi‑Fi</a>
+            <a href={waHost} target="_blank"><MessageCircle size={18}/> WhatsApp</a>
+            <a href="#maps"><MapPin size={18}/> Mape</a>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section className="quickGrid">
+          <a className="quickCard" href={`tel:${apartment.hostPhone.replaceAll(' ', '')}`}>
+            <Phone/> <span>Pozovi domaćina</span>
+          </a>
+          <a className="quickCard" href={waHost} target="_blank">
+            <MessageCircle/> <span>Pošalji WhatsApp</span>
+          </a>
+          <a className="quickCard" href={apartment.divcigora} target="_blank">
+            <MapPin/> <span>Navigacija do kompleksa</span>
+          </a>
+        </section>
+
+        <section id="wifi" className="panel wifiPanel">
+          <div>
+            <p className="eyebrow">Apartman F7</p>
+            <h2><Wifi/> Wi‑Fi pristup</h2>
+            <p className="muted">Skenirajte postojeći QR za automatsko povezivanje ili kopirajte podatke ispod.</p>
+          </div>
+          <div className="wifiBox">
+            <div><small>Mreža</small><strong>{apartment.wifiName}</strong></div>
+            <button onClick={() => copyText(apartment.wifiName)}><Copy size={16}/> Kopiraj</button>
+            <div><small>Lozinka</small><strong>{apartment.wifiPassword}</strong></div>
+            <button onClick={() => copyText(apartment.wifiPassword)}><Copy size={16}/> Kopiraj</button>
+          </div>
+        </section>
+
+        <section className="panel privatePanel">
+          <div className="privateHead">
+            <div>
+              <p className="eyebrow">Privatno za goste</p>
+              <h2><KeyRound/> Ulazak u apartman</h2>
+              <p className="muted">Ove informacije su namenjene gostima koji već borave u apartmanu.</p>
+            </div>
+            <button className="btn" onClick={() => setShowCodes(!showCodes)}>
+              <Lock size={16}/> {showCodes ? 'Sakrij šifre' : 'Prikaži šifre'}
+            </button>
+          </div>
+
+          {showCodes && (
+            <div className="codeGrid">
+              <div className="codeCard"><small>Šifra apartmana</small><strong>{apartment.apartmentCode}</strong></div>
+              <div className="codeCard"><small>Ulaz u zgradu</small><strong>{apartment.buildingCode}</strong></div>
+            </div>
+          )}
+        </section>
+
+        <section className="section" id="rules">
+          <p className="eyebrow">Kućni red</p>
+          <h2>Za prijatan boravak</h2>
+          <div className="rules">
+            <div>🕑 <strong>Check‑in:</strong> od 14:00</div>
+            <div>🕚 <strong>Check‑out:</strong> do 11:00</div>
+            <div>🔇 Noćni mir: 22:00 – 08:00</div>
+            <div>🚭 Pušenje nije dozvoljeno u apartmanu</div>
+            <div>💡 Pri izlasku ugasiti svetla i uređaje</div>
+            <div>🏡 Molimo čuvajte inventar kao svoj dom</div>
+          </div>
+        </section>
+
+        <section className="section" id="food">
+          <p className="eyebrow">Preporuke</p>
+          <h2><Utensils/> Gde jesti</h2>
+          <div className="places">
+            {food.map((place) => (
+              <article className="place" key={place.title}>
+                <div className="placeImage" style={{ backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,.25)), url(${place.image})` }} />
+                <div className="placeText">
+                  <span>{place.tag}</span>
+                  <h3>{place.title}</h3>
+                  <p>{place.text}</p>
+                  <div className="actions">
+                    {place.actions.map(a => <ActionButton key={a.label} href={a.href}>{a.label}</ActionButton>)}
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="section" id="maps">
+          <p className="eyebrow">U blizini</p>
+          <h2><ShoppingBag/> Prodavnice i lokacije</h2>
+          <div className="mapCards">
+            {shops.map(s => (
+              <a className="mapCard" href={s.href} target="_blank" key={s.title}>
+                <div><strong>{s.title}</strong><small>{s.subtitle}</small></div>
+                <MapPin/>
+              </a>
+            ))}
+            <a className="mapCard" href={apartment.divcigora} target="_blank">
+              <div><strong>Divčigora kompleks</strong><small>Lokacija apartmana F7</small></div><Home/>
+            </a>
+            <a className="mapCard" href={apartment.dsr} target="_blank">
+              <div><strong>DSR Divčigora</strong><small>Drugi kompleks DivčiCasa</small></div><Home/>
+            </a>
+          </div>
+        </section>
+
+        <section className="section" id="activities">
+          <p className="eyebrow">Doživite Divčibare</p>
+          <h2><Trees/> Aktivnosti</h2>
+          <div className="activityGrid">
+            {activities.map(a => (
+              <article className="activity" key={a.title}>
+                <div className="emoji">{a.emoji}</div>
+                <span>{a.tag}</span>
+                <h3>{a.title}</h3>
+                <p>{a.text}</p>
+                <div className="actions">
+                  {a.actions.map(x => <ActionButton key={x.label} href={x.href}>{x.label}</ActionButton>)}
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="section">
+          <p className="eyebrow">Uskoro</p>
+          <h2><Mountain/> Preporuke domaćina</h2>
+          <div className="routeGrid">
+            {comingRoutes.map(([icon, title, text]) => (
+              <div className="route" key={title}>
+                <b>{icon}</b>
+                <div><strong>{title}</strong><small>{text}</small></div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="discount">
+          <p>Ekskluzivno za goste DivčiCasa</p>
+          <h2>10% popusta</h2>
+          <span>na Quad Safari Divčibare</span>
+        </section>
+
+        <section className="review">
+          <Star/>
+          <h2>Hvala što ste izabrali DivčiCasa</h2>
+          <p>Ako vam je boravak bio prijatan, najveća nagrada za nas je vaša Google recenzija.</p>
+          <ActionButton href={apartment.reviewUrl}>Ostavite Google recenziju</ActionButton>
+        </section>
+      </main>
+
+      <footer>
+        <img src="/images/logo-dark.jpg" alt="DivčiCasa" />
+        <p>Divčibare • {apartment.name}</p>
+        <a href={apartment.siteUrl} target="_blank">Rezervišite direktno</a>
+      </footer>
+
+      <nav className="bottomNav">
+        <a href="#"><Home size={18}/><span>Start</span></a>
+        <a href="#wifi"><Wifi size={18}/><span>Wi‑Fi</span></a>
+        <a href="#food"><Utensils size={18}/><span>Hrana</span></a>
+        <a href="#maps"><MapPin size={18}/><span>Mape</span></a>
+        <a href={waHost} target="_blank"><Phone size={18}/><span>Kontakt</span></a>
+      </nav>
+    </>
+  )
+}
