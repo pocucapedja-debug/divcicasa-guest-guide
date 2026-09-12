@@ -44,6 +44,6 @@ export default function ApartmentPage(){
    <section className="review"><Star size={36}/><h2>Kako vam se dopao boravak?</h2><p>Ako ste zadovoljni, mnogo bi nam značilo da podelite svoje iskustvo.</p><a className="reviewBtn" href={apt.review} target="_blank">⭐⭐⭐⭐⭐ Ostavi Google recenziju</a></section>
    <section className="thanks"><h2>❤️ Hvala što ste odabrali DivčiCasa.</h2><p>Želimo vam prijatan boravak i nadamo se da ćete ponovo biti naši gosti.</p></section>
   </main>
-  <footer><img src="/images/logo.jpg" alt="DivčiCasa"/><p>{apt.address}</p><p><a href={`tel:${apt.phoneTel}`}>{apt.phone}</a> · <a href="https://divcicasa.rs/" target="_blank">🏡 Pogledaj apartmane</a>  <nav className="bottomNav"><a href="#wifi"><Wifi/><span>Wi‑Fi</span></a><a href="#food"><Utensils/><span>Hrana</span></a><a href="#activities"><Bike/><span>Aktivnosti</span></a><a href={wa} target="_blank"><MessageCircle/><span>Kontakt</span></a></nav>
+  <footer><img src="/images/logo.jpg" alt="DivčiCasa"/><p>{apt.address}</p><p><a href={`tel:${apt.phoneTel}`}>{apt.phone}</a> · <a href="https://divcicasa.rs/" target="_blank">🏡 Pogledaj apartmane</a></p></footer>className="bottomNav"><a href="#wifi"><Wifi/><span>Wi‑Fi</span></a><a href="#food"><Utensils/><span>Hrana</span></a><a href="#activities"><Bike/><span>Aktivnosti</span></a><a href={wa} target="_blank"><MessageCircle/><span>Kontakt</span></a></nav>
  </>
 }
