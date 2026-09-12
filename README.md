@@ -1,24 +1,5 @@
-# DivčiCasa Guest Guide v1.1
+# DivčiCasa Guest Guide – F7 v1.0
 
-Premium početna verzija za apartman F7.
+Deploy na Vercel kao Next.js projekat. Postojeći URL `/f7` ostaje isti, pa postojeći QR kod ne treba menjati.
 
-## Rute
-- `/`
-- `/f7`
-- `/apartman/f7`
-
-## Šta je novo
-- DivčiCasa logo
-- Premium dizajn
-- Wi‑Fi Copy dugmad
-- Privatna sekcija za šifre
-- Restoran Divčibar
-- Vila Plamenac
-- Maxi / Breza / Jutro
-- Quad Safari
-- Jahanje
-- Google recenzije
-- Navigacije
-
-## Važno
-Ova verzija je javna; privatne šifre su sakrivene iza dugmeta, ali nisu sistemski zaključane. Kasnije pravimo pravi privatni pristup.
+Glavni sadržaj F7 vodiča je u `app/apartman/[id]/page.jsx`, stilovi u `app/globals.css`, a originalne fotografije i logo su u `public/images/`.
