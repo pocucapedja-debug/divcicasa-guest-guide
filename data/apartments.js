@@ -14,6 +14,14 @@ export const apartments = {
     wifiName: 'M&D 2.4G / M&D 5G',
     wifiPassword: 'EnjoyYourStay',
     hostPhoneWa: '381666660015',
-    mapsUrl: 'https://maps.app.goo.gl/juLXoDXFnbHZPidG9'
+    mapsUrl: 'https://maps.app.goo.gl/juLXoDXFnbHZPidG9',
+    images: [
+      '/images/WhatsApp Image 2026-09-14 at 18.18.25.jpeg',
+      '/images/WhatsApp Image 2026-09-14 at 18.17.53.jpeg',
+      '/images/WhatsApp Image 2026-09-14 at 18.18.31.jpeg',
+      '/images/WhatsApp Image 2026-09-14 at 18.18.38.jpeg',
+      '/images/WhatsApp Image 2026-09-14 at 18.18.43.jpeg',
+      '/images/WhatsApp Image 2026-09-14 at 18.19.05.jpeg'
+    ]
   }
 }
