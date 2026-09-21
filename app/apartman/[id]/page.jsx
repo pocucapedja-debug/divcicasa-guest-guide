@@ -20,8 +20,36 @@ export default function ApartmentPage(){
    <section className="quickGrid" aria-label="Brze akcije">
     <a href="#wifi">📶<span>Wi‑Fi</span></a><a href={apt.maps} target="_blank">📍<span>Navigacija</span></a><a href={wa} target="_blank">💬<span>Piši domaćinu</span></a><a href={`tel:${apt.phoneTel}`}>📞<span>Pozovi domaćina</span></a>
    </section>
-   <section id="wifi" className="card wifiCard"><div><p className="eyebrow">BRZO POVEZIVANJE</p><h2><Wifi/> Wi‑Fi</h2><div className="credential"><span>Mreža</span><strong>{apt.wifiName}</strong><CopyValue value={apt.wifiName} label="Kopiraj"/></div><div className="credential"><span>Šifra</span><strong>{apt.wifiPassword}</strong><CopyValue value={apt.wifiPassword} label="Kopiraj šifru"/></div></div></section>
-   <section className="card"><p className="eyebrow">ULAZAK U APARTMAN</p><h2>🔑 Pristupne šifre</h2><div className="codeGrid"><div><span>Ulaz u zgradu</span><strong>{apt.buildingCode}</strong><CopyValue value={apt.buildingCode} label="Kopiraj"/></div><div><span>Ulaz u apartman</span><strong>{apt.apartmentCode}</strong><CopyValue value={apt.apartmentCode} label="Kopiraj"/></div></div></section>
+   <section id="wifi" className="card wifiCard">
+  <div>
+    <p className="eyebrow">BRZO POVEZIVANJE</p>
+    <h2><Wifi/> Wi-Fi</h2>
+
+    <div className="credential">
+      <span>Mreža</span>
+      <strong>{apt.wifiName}</strong>
+      <CopyValue value={apt.wifiName} label="Kopiraj"/>
+    </div>
+
+    <div className="credential">
+      <span>Šifra</span>
+      <strong>{apt.wifiPassword}</strong>
+      <CopyValue value={apt.wifiPassword} label="Kopiraj šifru"/>
+    </div>
+
+    <img
+      src="/images/F7_wifi_kartica.png"
+      alt="QR kod za direktno povezivanje na Wi-Fi u apartmanu F7"
+      style={{
+        width: '100%',
+        maxWidth: '320px',
+        display: 'block',
+        margin: '24px auto 0',
+        borderRadius: '16px'
+      }}
+    />
+  </div>
+</section>   <section className="card"><p className="eyebrow">ULAZAK U APARTMAN</p><h2>🔑 Pristupne šifre</h2><div className="codeGrid"><div><span>Ulaz u zgradu</span><strong>{apt.buildingCode}</strong><CopyValue value={apt.buildingCode} label="Kopiraj"/></div><div><span>Ulaz u apartman</span><strong>{apt.apartmentCode}</strong><CopyValue value={apt.apartmentCode} label="Kopiraj"/></div></div></section>
    <section className="card location"><div><p className="eyebrow">VAŠA LOKACIJA</p><h2><MapPin/> DivčiCasa F7</h2><p><strong>{apt.address}</strong></p></div><a className="btn" href={apt.maps} target="_blank">Pokreni navigaciju</a></section>
    <section className="gallery"><img src="/images/f7-living.webp"/><img src="/images/f7-kitchen.webp"/><img src="/images/f7-bedroom.webp"/><img src="/images/f7-terrace.webp"/><img src="/images/f7-bathroom.webp"/><img src="/images/f7-playground.jpg"/></section>
    <section className="card"><p className="eyebrow">TOKOM BORAVKA</p><h2><Home/> Važne informacije</h2><div className="rules"><div>🕑 <b>Check‑in:</b> od 14:00</div><div>🕚 <b>Check‑out:</b> do 11:00</div><div>🕰 Ako nije rezervisan sledeći termin, rado ćemo omogućiti kasniji izlazak uz prethodni dogovor.</div><div>🚭 Pušenje nije dozvoljeno u apartmanu.</div><div>🔇 Molimo za mir posle 22:00.</div><div>🚪 Pri izlasku zaključajte vrata.</div><div>♻️ Čuvajmo prirodu i okolinu Divčibara.</div></div></section>
