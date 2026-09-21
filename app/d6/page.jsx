@@ -108,7 +108,8 @@ export default function D6Page() {
             <CopyValue
               value="EnjoyYourStay"
               label="Kopiraj Wi-Fi šifru"
-            /> <img
+            />
+            <img
   src="/images/d6-wifi-qr.png"
   alt="QR kod za povezivanje na Wi-Fi u apartmanu D6"
   style={{
