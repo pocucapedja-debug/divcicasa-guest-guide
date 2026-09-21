@@ -267,15 +267,23 @@ export default function D6Page() {
           </div>
         </section>
 
-        <section className="review">
-          <Star size={36} />
-          <h2>Kako vam se dopao boravak?</h2>
-          <p>
-            Ako ste zadovoljni, mnogo bi nam značilo da podelite svoje
-            iskustvo i ostavite Google recenziju.
-          </p>
-        </section>
+      <section className="review">
+  <Star size={36} />
+  <h2>Kako vam se dopao boravak?</h2>
+  <p>
+    Ako ste zadovoljni, mnogo bi nam značilo da podelite svoje
+    iskustvo i ostavite Google recenziju.
+  </p>
 
+  <a
+    className="smallBtn"
+    href="https://g.page/r/CXbmnuEzExJVEBM/review"
+    target="_blank"
+    rel="noreferrer"
+  >
+    ⭐ Ostavi Google recenziju
+  </a>
+</section>
         <section className="thanks">
           <h2>❤️ Hvala što ste odabrali DivčiCasa.</h2>
           <p>
