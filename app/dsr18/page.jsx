@@ -115,7 +115,7 @@ export default function DSR18Page() {
               label="Kopiraj Wi-Fi šifru"
             />
             <img
-  src="/images/d6-wifi-qr.png"
+  src="/images/dsr18-wifi-qr.png"
   alt="QR kod za povezivanje na Wi-Fi u apartmanu DSR18"
   style={{
     width: '100%',
