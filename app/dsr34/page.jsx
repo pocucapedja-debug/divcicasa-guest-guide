@@ -18,17 +18,22 @@ const apt = {
   phoneTel: '+381666660015',
   maps: 'https://maps.app.goo.gl/Xm6QaGzTzLEnea2U7',
   images: [
-    '/images/IMG_4761.jpg',
-    '/images/IMG_4763.jpg',
-    '/images/IMG_4765.jpg',
-    '/images/IMG_4767.jpg',
-    '/images/IMG_4768.jpg',
-    '/images/IMG_4773.jpg',
-    '/images/IMG_4774.jpg',
-    '/images/IMG_4776.jpg',
-    '/images/IMG_4824.JPG',
-    '/images/Dvoriste_26b2df5fae.webp'
-  ]
+   '/images/IMG_4787.jpg',
+  '/images/IMG_4788.jpg',
+  '/images/IMG_4789.jpg',
+  '/images/IMG_4791.jpg',
+  '/images/IMG_4792.jpg',
+  '/images/IMG_4794.jpg',
+  '/images/IMG_4796.jpg',
+  '/images/IMG_4798.jpg',
+  '/images/IMG_4801.jpg',
+  '/images/IMG_4803.jpg',
+  '/images/IMG_4804.jpg',
+  '/images/IMG_4806.jpg',
+  '/images/IMG_4808.jpg',
+  '/images/Garaza parking 14 Dsr34.jpeg',
+  '/images/Ula u garazu Dsr.jpeg',
+  ],
 }
 function CopyValue({ value, label }) {
   const [ok, setOk] = useState(false)
