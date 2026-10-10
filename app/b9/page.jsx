@@ -15,18 +15,19 @@ const apt = {
   phone: '+381 66 666 0015',
   phoneTel: '+381666660015',
  maps: 'https://maps.app.goo.gl/17B6eScFT3wfo8Hp9',
-  images: [
-       '/images/278A0278.jpg',
-    '/images/278A0282.jpg',
-    '/images/278A0283.jpg',
-    '/images/278A0614.jpg',
-    '/images/Zluml.jpg',
-    '/images/zz9Tw.jpg',
-  ]
+  
+images: [
+  '/images/slika 1.jpg',
+  '/images/slika 2.jpg',
+  '/images/slika 3.jpg',
+  '/images/slika 4.jpg',
+  '/images/slika 5.jpg',
+  '/images/slika 6.jpg',
+],
 }
 
 function CopyValue({ value, label }) {
-  const [ok, setOk] = useState(false)
+const [ok, setOk] = useState(false)  
 
   async function copy() {
     try {
