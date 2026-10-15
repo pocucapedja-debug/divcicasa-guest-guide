@@ -189,20 +189,44 @@ export default function DSR18Page() {
           </div>
 
           <div className="recommendGrid">
-            <article className="mini">
-              <h3>🍽 Divčibar</h3>
-              <p>
-                Veoma dobra i specifična hrana, prijatan planinski ambijent
-                i odličan izbor tokom boravka.
-              </p>
-            </article>
+         
+<article className="mini">
+  <h3>🍽️ Restoran Divčibar</h3>
+  <p>
+    Veoma dobra i specifična hrana, prijatan planinski ambijent
+    i odličan izbor tokom boravka.
+  </p>
+  <div className="actions">
+    <a
+      className="smallBtn"
+      href="https://www.google.com/maps/search/?api=1&query=Restoran+Divcibar+Divcibare"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      📍 Navigacija
+    </a>
+  </div>
+</article>
 
-            <article className="mini">
-              <h3>🍽 Vila Plamenac</h3>
-              <p>
-                Još jedna preporuka za obrok i predah na Divčibarama.
-              </p>
-            </article>
+
+           
+<article className="mini">
+  <h3>🍽️ Vila Plamenac</h3>
+  <p>
+    Još jedna preporuka za obrok i predah na Divčibarama.
+  </p>
+  <div className="actions">
+    <a
+      className="smallBtn"
+      href="https://www.google.com/maps/search/?api=1&query=Vila+Plamenac+Divcibare"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      📍 Navigacija
+    </a>
+  </div>
+</article>
+
           </div>
         </section>
 
@@ -213,20 +237,35 @@ export default function DSR18Page() {
           </div>
 
           <div className="recommendGrid">
-            <article className="mini">
-              <h3>🛒 Maxi</h3>
-              <p>Veća prodavnica za svakodnevnu kupovinu namirnica i potrepština.</p>
-            </article>
+           <article className="mini">
+  <h3>🛒 Maxi</h3>
+  <p>Veća prodavnica za svakodnevnu kupovinu namirnica i potrepština.</p>
+  <div className="actions">
+    <a className="smallBtn" href="https://www.google.com/maps/search/?api=1&query=Maxi+Divcibare" target="_blank" rel="noopener noreferrer">
+      📍 Navigacija
+    </a>
+  </div>
+</article>
 
-            <article className="mini">
-              <h3>🛒 Jutro</h3>
-              <p>Praktična prodavnica za osnovne namirnice i svakodnevne potrebe.</p>
-            </article>
+<article className="mini">
+  <h3>🛒 Jutro</h3>
+  <p>Praktična prodavnica za osnovne namirnice i svakodnevne potrebe.</p>
+  <div className="actions">
+    <a className="smallBtn" href="https://www.google.com/maps/search/?api=1&query=Prodavnica+Jutro+Divcibare" target="_blank" rel="noopener noreferrer">
+      📍 Navigacija
+    </a>
+  </div>
+</article>
 
-            <article className="mini">
-              <h3>🛍 Breza Shop</h3>
-              <p>Lokalni proizvodi i praktične stvari za boravak na Divčibarama.</p>
-            </article>
+<article className="mini">
+  <h3>🛍️ Breza Shop</h3>
+  <p>Lokalni proizvodi i praktične stvari za boravak na Divčibarama.</p>
+  <div className="actions">
+    <a className="smallBtn" href="https://www.google.com/maps/search/?api=1&query=Breza+Shop+Divcibare" target="_blank" rel="noopener noreferrer">
+      📍 Navigacija
+    </a>
+  </div>
+</article>
           </div>
         </section>
 
@@ -238,15 +277,20 @@ export default function DSR18Page() {
 
           <div className="recommendGrid">
           
+
 <article className="mini feature">
-  <h3><Waves /> Crni Vrh SPA</h3>
+  <h3><Waves /> Crni Vrh SPA – Rezervacije: +381 14 31 55 511</h3>
   <p>
-    Oko 10 minuta hoda od apartmana. SPA centar je dostupan
+    Na oko 10 minuta hoda od apartmana. SPA centar je dostupan
     i gostima koji nisu smešteni u hotelu.
   </p>
-  <a href="tel:+381143155511">
-    📞 Pozovi i rezerviši SPA: +381 14 31 55 511
-  </a>
+  <p>🕘 <b>09:00–23:00</b></p>
+  <p>🔞 <b>21:00–23:00 samo za odrasle</b></p>
+  <div className="actions">
+    <a className="smallBtn" href="tel:+381143155511">
+      📞 Pozovi SPA
+    </a>
+  </div>
 </article>
 
  
@@ -256,16 +300,29 @@ export default function DSR18Page() {
   <h3>🏍️ Kvadovi – centar Divčibara</h3>
   <p>
     Istražite Divčibare vožnjom kvadova kroz prirodu.
-    Za rezervacije i informacije pozovite Dejana.
-    Prilikom rezervacije napomenite da ste gosti DivčiCasa.
+    Za rezervaciju i informacije pozovite Dejana.
+    Prilikom rezervacije recite da ste gosti DivčiCasa.
   </p>
-  <a className="smallBtn" href="tel:+38163535559">
-    📞 Pozovi Dejana: +381 63 535 559
-  </a>
+  <div className="actions">
+    <a className="smallBtn" href="tel:+38163535559">
+      📞 Dejan
+    </a>
+  </div>
 </article>
 
 
             <article className="mini">
+  <h3>🏇 Jahanje na Divčibarama</h3>
+  <p>
+    Šetnje konjima za početnike i iskusne jahače,
+    kao i kraće jahanje za decu.
+  </p>
+  <div className="actions">
+    <a className="smallBtn" href="tel:+381612595322">
+      📞 Pozovi – jahanje
+    </a>
+  </div>
+</article>
              
 <h3>🐎 Jahanje na Divčibarama</h3><p>Šetnje konjima za početnike i iskusne jahače, kao i kraće jahanje za decu.</p><a href="tel:+381612595322">📞 Rezerviši jahanje: +381 61 259 5322</a>
 
