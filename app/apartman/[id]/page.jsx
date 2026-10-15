@@ -63,9 +63,10 @@ export default function ApartmentPage(){
     <article className="mini"><h3>🛍️ Breza Shop</h3><p>Lokalni proizvodi i praktične stvari za boravak na Divčibarama.</p><div className="actions"><a href="https://maps.app.goo.gl/YWxJVQQsnoemTtpv7" target="_blank">📍 Navigacija</a><Call number="0646427246">Pozovi</Call></div></article>
    </div></section>
    <section id="activities"><div className="sectionHead"><p className="eyebrow">DOŽIVITE DIVČIBARE</p><h2><Trees/> Aktivnosti</h2></div><div className="recommendGrid">
-    <article className="mini feature"><h3><Waves/> Crni Vrh SPA</h3><p>Na oko <b>10 minuta hoda od DivčiCasa F7</b>. SPA centar je dostupan i eksternim gostima.</p><p>🕘 <b>09:00–23:00</b><br/>🔞 <b>21:00–23:00 samo za odrasle</b></p><Call number="0143155511">Pozovi SPA</Call></article>
+    <article className="mini feature"><h3><Waves/> Crni Vrh SPA – Rezervacije: +381 14 31 55 511</h3><p>Na oko <b>10 minuta hoda od DivčiCasa F7</b>. SPA centar je dostupan i eksternim gostima.</p><p>🕘 <b>09:00–23:00</b><br/>🔞 <b>21:00–23:00 samo za odrasle</b></p><Call number="0143155511">Pozovi SPA</Call></article>
     <article className="mini"><h3>🏍️ Kvadovi – centar Divčibara</h3><p>Za rezervaciju i informacije pozovite Dejana. Prilikom rezervacije recite da ste gosti DivčiCasa.</p><Call number="+38163535559">Dejan</Call></article>
-    <article className="mini"><h3>🐎 Jahanje na Divčibarama</h3><p>Šetnje konjima za početnike i iskusne jahače, kao i kraće jahanje za decu.</p><p>🕘 Svaki dan po dogovoru, <b>09:00–18:00</b><br/>📍 Tačna lokacija po dogovoru</p><Call number="+381612595322">Rezerviši jahanje</Call></article>
+   <article className="mini"><h3>🐎 Jahanje na Divčibarama</h3><p>Šetnje konjima za početnike i iskusne jahače, kao i kraće jahanje za decu.</p><p>🕘 Svaki dan po dogovoru, 09:00–18:00. 📍 Tačna lokacija po dogovoru.</p><Call number="+381612595322">📞 Rezerviši jahanje: +381 61 259 5322</Call></article>
+    
     <article className="mini"><h3><Mountain/> Priroda & aktivan odmor</h3><p>Šetnja i planinarenje, Crni vrh i vidikovci, biciklizam, a zimi skijanje i sankanje.</p></article>
    </div></section>
    <section className="card emergency"><p className="eyebrow">ZA SVAKI SLUČAJ</p><h2><ShieldAlert/> Hitni brojevi</h2><div className="emergencyGrid"><a href="tel:192">👮 Policija <b>192</b></a><a href="tel:193">🚒 Vatrogasci <b>193</b></a><a href="tel:194">🚑 Hitna pomoć <b>194</b></a><a href="tel:112">🆘 Opšti hitni broj <b>112</b></a></div></section>
