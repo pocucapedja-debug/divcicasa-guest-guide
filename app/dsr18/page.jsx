@@ -237,28 +237,39 @@ export default function DSR18Page() {
           </div>
 
           <div className="recommendGrid">
-            <article className="mini feature">
-              <h3><Waves /> Crni Vrh SPA</h3>
-              <p>
-                Oko 10 minuta hoda od apartmana. SPA centar je dostupan
-                i gostima koji nisu smešteni u hotelu.
-              </p>
-            </article>
+          
+<article className="mini feature">
+  <h3><Waves /> Crni Vrh SPA</h3>
+  <p>
+    Oko 10 minuta hoda od apartmana. SPA centar je dostupan
+    i gostima koji nisu smešteni u hotelu.
+  </p>
+  <a href="tel:+381143155511">
+    📞 Pozovi i rezerviši SPA: +381 14 31 55 511
+  </a>
+</article>
+
+ 
+
+            
+<article className="mini">
+  <h3>🏍️ Kvadovi – centar Divčibara</h3>
+  <p>
+    Istražite Divčibare vožnjom kvadova kroz prirodu.
+    Za rezervacije i informacije pozovite Dejana.
+    Prilikom rezervacije napomenite da ste gosti DivčiCasa.
+  </p>
+  <a className="smallBtn" href="tel:+38163535559">
+    📞 Pozovi Dejana: +381 63 535 559
+  </a>
+</article>
+
 
             <article className="mini">
-              <h3>🏍 Kvadovi – centar Divčibara</h3>
-              <p>
-                Za rezervaciju i informacije kontaktirajte organizatora
-                pre polaska.
-              </p>
-            </article>
+             
+<h3>🐎 Jahanje na Divčibarama</h3><p>Šetnje konjima za početnike i iskusne jahače, kao i kraće jahanje za decu.</p><a href="tel:+381612595322">📞 Rezerviši jahanje: +381 61 259 5322</a>
 
-            <article className="mini">
-              <h3>🐎 Jahanje na Divčibarama</h3>
-              <p>
-                Šetnje konjima za početnike i iskusne jahače, kao i kraće
-                jahanje za decu.
-              </p>
+             
             </article>
 
             <article className="mini">
