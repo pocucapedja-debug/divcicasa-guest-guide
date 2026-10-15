@@ -249,6 +249,13 @@ export default function dsr24Page() {
                 Oko 10 minuta hoda od apartmana. SPA centar je dostupan
                 i gostima koji nisu smešteni u hotelu.
               </p>
+              
+<div className="actions">
+  <a className="smallBtn" href="tel:+381143155511">
+    📞 Pozovi i rezerviši SPA: +381 14 31 55 511
+  </a>
+</div>
+
             </article>
 
             <article className="mini">
@@ -257,6 +264,13 @@ export default function dsr24Page() {
                 Za rezervaciju i informacije kontaktirajte organizatora
                 pre polaska.
               </p>
+              
+<div className="actions">
+  <a className="smallBtn" href="tel:+38163535559">
+    📞 Pozovi Dejana: +381 63 535 559
+  </a>
+</div>
+
             </article>
 
             <article className="mini">
@@ -265,6 +279,13 @@ export default function dsr24Page() {
                 Šetnje konjima za početnike i iskusne jahače, kao i kraće
                 jahanje za decu.
               </p>
+              
+<div className="actions">
+  <a className="smallBtn" href="tel:+381612595322">
+    📞 Pozovi – jahanje: +381 61 259 5322
+  </a>
+</div>
+
             </article>
 
             <article className="mini">
