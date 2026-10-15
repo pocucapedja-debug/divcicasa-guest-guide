@@ -191,6 +191,12 @@ export default function B9Page() {
                 Veoma dobra i specifična hrana, prijatan planinski ambijent
                 i odličan izbor tokom boravka.
               </p>
+              
+<div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', marginTop: '12px' }}>
+  <a href="tel:+381646439776">📞 Pozovi restoran</a>
+  <a href="https://maps.app.goo.gl/G2eXxA4KY4WizN959" target="_blank" rel="noopener noreferrer">📍 Lokacija</a>
+</div>
+
             </article>
 
             <article className="mini">
@@ -198,6 +204,12 @@ export default function B9Page() {
               <p>
                 Još jedna preporuka za obrok i predah na Divčibarama.
               </p>
+              
+<div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', marginTop: '12px' }}>
+  <a href="tel:+381646439766">📞 Pozovi restoran</a>
+  <a href="https://maps.app.goo.gl/g3YKSQAkZYhcjATr6" target="_blank" rel="noopener noreferrer">📍 Lokacija</a>
+</div>
+
             </article>
           </div>
         </section>
@@ -212,16 +224,43 @@ export default function B9Page() {
             <article className="mini">
               <h3>🛒 Maxi</h3>
               <p>Veća prodavnica za svakodnevnu kupovinu namirnica i potrepština.</p>
+              
+<a
+  href="https://www.google.com/maps/search/?api=1&query=Maxi+Divcibare"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  📍 Otvori lokaciju Maxi
+</a>
+
             </article>
 
             <article className="mini">
               <h3>🛒 Jutro</h3>
               <p>Praktična prodavnica za osnovne namirnice i svakodnevne potrebe.</p>
+              
+<a
+  href="https://www.google.com/maps/search/?api=1&query=Dobro+jutro+prodavnica+Divcibare"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  📍 Otvori lokaciju Dobro jutro
+</a>
+
             </article>
 
             <article className="mini">
               <h3>🛍 Breza Shop</h3>
               <p>Lokalni proizvodi i praktične stvari za boravak na Divčibarama.</p>
+              
+<a
+  href="https://maps.app.goo.gl/PWYtgKjM7LgqCSMj6"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  📍 Otvori lokaciju Breza Shop
+</a>
+
             </article>
           </div>
         </section>
@@ -239,6 +278,11 @@ export default function B9Page() {
                 Oko 10 minuta hoda od apartmana. SPA centar je dostupan
                 i gostima koji nisu smešteni u hotelu.
               </p>
+              
+<a href="tel:+381143155511">
+  📞 Pozovi i rezerviši SPA: +381 14 31 55 511
+</a>
+
             </article>
 
             <article className="mini">
@@ -247,6 +291,11 @@ export default function B9Page() {
                 Za rezervaciju i informacije kontaktirajte organizatora
                 pre polaska.
               </p>
+              
+<a href="tel:+38163535559">
+  📞 Rezervacija kvadova – Dejan: +381 63 535 559
+</a>
+
             </article>
 
             <article className="mini">
@@ -255,6 +304,11 @@ export default function B9Page() {
                 Šetnje konjima za početnike i iskusne jahače, kao i kraće
                 jahanje za decu.
               </p>
+              
+<a href="tel:+381612595322">
+  📞 Rezervacija jahanja: +381 61 259 5322
+</a>
+
             </article>
 
             <article className="mini">
