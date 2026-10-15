@@ -324,10 +324,7 @@ export default function DSR18Page() {
   </div>
 </article>
              
-<h3>🐎 Jahanje na Divčibarama</h3><p>Šetnje konjima za početnike i iskusne jahače, kao i kraće jahanje za decu.</p><a href="tel:+381612595322">📞 Rezerviši jahanje: +381 61 259 5322</a>
 
-             
-            </article>
 
             <article className="mini">
               <h3><Mountain /> Priroda & aktivan odmor</h3>
