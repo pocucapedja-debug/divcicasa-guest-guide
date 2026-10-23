@@ -105,22 +105,22 @@ export default function dsr30Page() {
             <div className="credentials">
               <div>
                 <span>Mreža</span>
-                <strong>Divcicasa</strong>
+                <strong>B530_3405</strong>
               </div>
 
               <div>
                 <span>Šifra</span>
-                <strong>apartman24</strong>
+                <strong>6LGnqR4Ta8D</strong>
               </div>
             </div>
 
             <CopyValue
-              value="apartman24"
+              value="6LGnqR4Ta8D"
               
               label="Kopiraj Wi-Fi šifru"
             />
             <img
-  src="/images/dsr30-wifi-qr.png"
+ src="/images/DSR30-wifi-qr.png"
   alt="QR kod za povezivanje na Wi-Fi u apartmanu dsr30"
   style={{
     width: '100%',
