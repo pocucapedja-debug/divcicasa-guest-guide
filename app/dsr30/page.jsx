@@ -17,23 +17,22 @@ apartmentCode: '2401#',
   phone: '+381 66 666 0015',
   phoneTel: '+381666660015',
   maps: 'https://maps.app.goo.gl/Xm6QaGzTzLEnea2U7',
- images: [
-  '/images/Tezza-0152.jpg',
-  '/images/Tezza-0325.jpg',
-  '/images/Tezza-0742.jpg',
-  '/images/Tezza-1750.jpg',
-  '/images/Tezza-2300.jpg',
-  '/images/Tezza-3597.jpg',
-  '/images/Tezza-3795.jpg',
-  '/images/Tezza-3941.jpg',
-  '/images/Tezza-6433.jpg',
-  '/images/Tezza-6522.jpg',
-  '/images/Tezza-6780.jpg',
-  '/images/Tezza-8128.jpg',
-  '/images/Tezza-8676.jpg',
-  '/images/Tezza-9078.jpg',
-  '/images/Tezza-9476.jpg'
+
+images: [
+  '/images/DSR30-01.jpg',
+  '/images/DSR30-02.jpg',
+  '/images/DSR30-03.jpg',
+  '/images/DSR30-04.jpg',
+  '/images/DSR30-05.jpg',
+  '/images/DSR30-06.jpg',
+  '/images/DSR30-07.jpg',
+  '/images/DSR30-08.jpg',
+  '/images/DSR30-09.jpg',
+  '/images/DSR30-10.jpg',
+  '/images/DSR30-11.jpg',
+  '/images/DSR30-12.jpg'
 ],
+
 }
 function CopyValue({ value, label }) {
   const [ok, setOk] = useState(false)
