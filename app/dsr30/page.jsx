@@ -102,23 +102,30 @@ export default function dsr30Page() {
             <p className="eyebrow">BRZO POVEZIVANJE</p>
             <h2><Wifi /> Wi-Fi</h2>
 
-            <div className="credentials">
+            <div
+  className="credentials"
+  style={{
+    display: 'grid',
+    gap: '16px',
+    marginBottom: '20px'
+  }}
+>
               <div>
-                <span>Mreža</span>
+               <span style={{ display: 'block', marginBottom: '6px' }}>Mreža</span>
                 <strong>B530_3405</strong>
               </div>
 
               <div>
-                <span>Šifra</span>
+               <span style={{ display: 'block', marginBottom: '6px' }}>Lozinka</span>
                 <strong>6LGnqR4Ta8D</strong>
               </div>
             </div>
 
-            <CopyValue
+           <div style={{ marginBottom: '20px' }}><CopyValue
               value="6LGnqR4Ta8D"
               
               label="Kopiraj Wi-Fi šifru"
-            />
+           /></div>
             <img
  src="/images/DSR30-wifi-qr.png"
   alt="QR kod za povezivanje na Wi-Fi u apartmanu dsr30"
@@ -139,7 +146,7 @@ export default function dsr30Page() {
 
         <p>
   Šifra za ulazak u zgradu: <strong>1#6248#</strong><br />
-  Šifra apartmana dsr30: <strong>2244</strong>
+  Šifra apartmana dsr30: <strong>2401#</strong>
 </p>
 
           <p>
