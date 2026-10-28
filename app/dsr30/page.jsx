@@ -206,7 +206,8 @@ export default function dsr30Page() {
               <p>
                 Veoma dobra i specifična hrana, prijatan planinski ambijent
                 i odličan izbor tokom boravka.
-              </p><a
+            </p>
+<a
   href="https://www.google.com/maps/search/?api=1&query=Restoran+Divcibar+Divcibare"
   target="_blank"
   rel="noopener noreferrer"
@@ -259,7 +260,7 @@ export default function dsr30Page() {
   </a>
 </article>
           </div>
-
+</section>
 
         <section>
           <div className="sectionHead">
