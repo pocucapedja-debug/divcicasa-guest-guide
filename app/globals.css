@@ -5,3 +5,17 @@ a[href^="tel:"].mapBtn {
   color: #ffffff !important;
   border-color: #173d31 !important;
 }
+.mapBtn,
+a[href^="tel:"].mapBtn {
+  background-color: #173d31 !important;
+  color: #ffffff !important;
+  border: 2px solid #173d31 !important;
+  padding: 14px 20px !important;
+  font-size: 16px !important;
+  font-weight: 800 !important;
+  border-radius: 14px !important;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+}
