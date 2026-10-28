@@ -200,6 +200,14 @@ export default function DSR34Page() {
                 Veoma dobra i specifična hrana, prijatan planinski ambijent
                 i odličan izbor tokom boravka.
               </p>
+              <a
+  href="https://www.google.com/maps/search/?api=1&query=Restoran+Divcibar+Divcibare"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mapBtn"
+>
+  📍 Navigacija
+</a>
             </article>
 
             <article className="mini">
@@ -207,6 +215,14 @@ export default function DSR34Page() {
               <p>
                 Još jedna preporuka za obrok i predah na Divčibarama.
               </p>
+              <a
+  href="https://www.google.com/maps/search/?api=1&query=Vila+Plamenac+Divcibare"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mapBtn"
+>
+  📍 Navigacija
+</a>
             </article>
           </div>
         </section>
@@ -221,16 +237,42 @@ export default function DSR34Page() {
             <article className="mini">
               <h3>🛒 Maxi</h3>
               <p>Veća prodavnica za svakodnevnu kupovinu namirnica i potrepština.</p>
+           <a
+  href="https://www.google.com/maps/search/?api=1&query=Maxi+Divcibare"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mapBtn"
+>
+  📍 Navigacija
+</a>
             </article>
 
             <article className="mini">
               <h3>🛒 Jutro</h3>
               <p>Praktična prodavnica za osnovne namirnice i svakodnevne potrebe.</p>
+              <a
+  href="https://www.google.com/maps/search/?api=1&query=Prodavnica+Jutro+Divcibare"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mapBtn"
+>
+  📍 Navigacija
+</a>
+
+
             </article>
 
             <article className="mini">
               <h3>🛍 Breza Shop</h3>
               <p>Lokalni proizvodi i praktične stvari za boravak na Divčibarama.</p>
+         <a
+  href="https://www.google.com/maps/search/?api=1&query=Breza+Shop+Divcibare"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mapBtn"
+>
+  📍 Navigacija
+</a>
             </article>
           </div>
         </section>
