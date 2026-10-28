@@ -283,39 +283,52 @@ export default function DSR34Page() {
             <h2><Trees /> Aktivnosti</h2>
           </div>
 
-          <div className="recommendGrid">
-            <article className="mini feature">
-              <h3><Waves /> Crni Vrh SPA</h3>
-              <p>
-                Oko 10 minuta hoda od apartmana. SPA centar je dostupan
-                i gostima koji nisu smešteni u hotelu.
-              </p>
-            </article>
+         <div className="recommendGrid">
+  <article className="mini feature">
+    <h3><Waves /> Crni Vrh SPA – Rezervacije: +381 14 31 55 511</h3>
+    <p>
+      Oko 10 minuta hoda od apartmana. SPA centar je dostupan
+      i gostima koji nisu smešteni u hotelu.
+    </p>
+    <p>🕘 09:00–23:00<br />🔞 21:00–23:00 samo za odrasle</p>
+    <a href="tel:+381143155511" className="mapBtn">
+      📞 Pozovi SPA
+    </a>
+  </article>
 
-            <article className="mini">
-              <h3>🏍 Kvadovi – centar Divčibara</h3>
-              <p>
-                Za rezervaciju i informacije kontaktirajte organizatora
-                pre polaska.
-              </p>
-            </article>
+  <article className="mini">
+    <h3>🏍️ Kvadovi – centar Divčibara</h3>
+    <p>
+      Za rezervaciju i informacije pozovite Dejana.
+      Prilikom rezervacije recite da ste gosti DivčiCasa.
+    </p>
+   <a href="tel:+38163535559" className="mapBtn">
+      📞 Dejan
+    </a>
+  </article>
 
-            <article className="mini">
-              <h3>🐎 Jahanje na Divčibarama</h3>
-              <p>
-                Šetnje konjima za početnike i iskusne jahače, kao i kraće
-                jahanje za decu.
-              </p>
-            </article>
+  <article className="mini">
+    <h3>🐎 Jahanje na Divčibarama</h3>
+    <p>
+      Šetnje konjima za početnike i iskusne jahače,
+      kao i kraće jahanje za decu.
+    </p>
+    <p>🕘 Svaki dan po dogovoru, 09:00–18:00.<br />
+      📍 Tačna lokacija po dogovoru.
+    </p>
+    <a href="tel:+381612595322" className="mapBtn">
+      📞 Rezerviši jahanje: +381 61 259 5322
+    </a>
+  </article>
 
-            <article className="mini">
-              <h3><Mountain /> Priroda & aktivan odmor</h3>
-              <p>
-                Šetnja i planinarenje, Crni vrh i vidikovci, biciklizam,
-                a zimi skijanje i sankanje.
-              </p>
-            </article>
-          </div>
+  <article className="mini">
+    <h3><Mountain /> Priroda &amp; aktivan odmor</h3>
+    <p>
+      Šetnja i planinarenje, Crni vrh i vidikovci,
+      biciklizam, a zimi skijanje i sankanje.
+    </p>
+  </article>
+</div>
         </section>
 
         <section className="card emergency">
