@@ -41,7 +41,17 @@ export default function ApartmentPage(){
   </div>
 </section>   <section className="card"><p className="eyebrow">ULAZAK U APARTMAN</p><h2>🔑 Pristupne šifre</h2><div className="codeGrid"><div><span>Ulaz u zgradu</span><strong>{apt.buildingCode}</strong><CopyValue value={apt.buildingCode} label="Kopiraj"/></div><div><span>Ulaz u apartman</span><strong>{apt.apartmentCode}</strong><CopyValue value={apt.apartmentCode} label="Kopiraj"/></div></div></section>
    <section className="card location"><div><p className="eyebrow">VAŠA LOKACIJA</p><h2><MapPin/> DivčiCasa B1</h2><p><strong>{apt.address}</strong></p></div><a className="btn" href={apt.maps} target="_blank">Pokreni navigaciju</a></section>
-   <section className="gallery"></section>
+  <section className="gallery">
+  {Array.from({ length: 19 }, (_, i) => (
+    <img
+      key={i}
+      src={`/images/b1-${i + 1}.webp`}
+      alt={`Apartman B1 - fotografija ${i + 1}`}
+      loading="lazy"
+      style={{ width: "100%", borderRadius: "12px", marginBottom: "12px" }}
+    />
+  ))}
+</section>
    <section className="card"><p className="eyebrow">TOKOM BORAVKA</p><h2><Home/> Važne informacije</h2><div className="rules"><div>🕑 <b>Check‑in:</b> od 14:00</div><div>🕚 <b>Check‑out:</b> do 11:00</div><div>🕰 Ako nije rezervisan sledeći termin, rado ćemo omogućiti kasniji izlazak uz prethodni dogovor.</div><div>🚭 Pušenje nije dozvoljeno u apartmanu.</div><div>🔇 Molimo za mir posle 22:00.</div><div>🚪 Pri izlasku zaključajte vrata.</div><div>♻️ Čuvajmo prirodu i okolinu Divčibara.</div></div></section>
    <section id="food"><div className="sectionHead"><p className="eyebrow">PREPORUKE DIVČICASA</p><h2><Utensils/> Gde jesti</h2></div>
     <div className="recommendGrid"><article className="mini"><h3>🍽️ Divčibar</h3><p>Veoma dobra i specifična hrana, prijatan planinski ambijent i odličan izbor tokom boravka.</p><div className="actions"><a href="https://maps.app.goo.gl/7VLuwW8bBpoD2LP29" target="_blank">📍 Navigacija</a><Call number="0646439776">Pozovi</Call></div></article>
