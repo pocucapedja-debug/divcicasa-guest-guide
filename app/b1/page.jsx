@@ -36,7 +36,14 @@ export default function ApartmentPage(){
       <strong>{apt.wifiPassword}</strong>
       <CopyValue value={apt.wifiPassword} label="Kopiraj šifru"/>
     </div>
-
+<div style={{ textAlign: "center", marginTop: "20px" }}>
+  <p><strong>📱 Skenirajte QR kod za povezivanje na Wi-Fi</strong></p>
+  <img
+    src="/images/b1-wifi-qr.png"
+    alt="Wi-Fi QR kod za apartman B1"
+    style={{ width: "180px", maxWidth: "100%", borderRadius: "12px" }}
+  />
+</div>
     
   </div>
 </section>   <section className="card"><p className="eyebrow">ULAZAK U APARTMAN</p><h2>🔑 Pristupne šifre</h2><div className="codeGrid"><div><span>Ulaz u zgradu</span><strong>{apt.buildingCode}</strong><CopyValue value={apt.buildingCode} label="Kopiraj"/></div><div><span>Ulaz u apartman</span><strong>{apt.apartmentCode}</strong><CopyValue value={apt.apartmentCode} label="Kopiraj"/></div></div></section>
