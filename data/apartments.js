@@ -23,5 +23,12 @@ export const apartments = {
       '/images/WhatsApp Image 2026-09-14 at 18.18.43.jpeg',
       '/images/WhatsApp Image 2026-09-14 at 18.19.05.jpeg'
     ]
+  },
+  b1: {
+    id: 'b1',
+    name: 'Apartman B1',
+    wifiName: 'divcigorab1',
+    wifiPassword: 'divcigorab12021',
+    hostPhoneWa: '381666660015'
   }
 }
