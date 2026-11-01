@@ -52,7 +52,7 @@ export default function ApartmentPage(){
   {Array.from({ length: 19 }, (_, i) => (
     <img
       key={i}
-      src={`/images/b1-${i + 1}.webp`}
+      src={`/images/b1-${String(i + 1).padStart(2, '0')}.webp`}
       alt={`Apartman B1 - fotografija ${i + 1}`}
       loading="lazy"
       style={{ width: "100%", borderRadius: "12px", marginBottom: "12px" }}
