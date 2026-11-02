@@ -39,7 +39,7 @@ export default function ApartmentPage(){
 <div style={{ textAlign: "center", marginTop: "20px" }}>
   <p><strong>📱 Skenirajte QR kod za povezivanje na Wi-Fi</strong></p>
   <img
-    src="/images/B2-wifi-qr.png"
+   src="/images/DivciCasa_B2_WiFi_QR.png"
     alt="Wi-Fi QR kod za apartman B2"
     style={{ width: "180px", maxWidth: "100%", borderRadius: "12px" }}
   />
