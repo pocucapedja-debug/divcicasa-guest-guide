@@ -49,7 +49,7 @@ export default function ApartmentPage(){
 </section>   <section className="card"><p className="eyebrow">ULAZAK U APARTMAN</p><h2>🔑 Pristupne šifre</h2><div className="codeGrid"><div><span>Ulaz u zgradu</span><strong>{apt.buildingCode}</strong><CopyValue value={apt.buildingCode} label="Kopiraj"/></div><div><span>Ulaz u apartman</span><strong>{apt.apartmentCode}</strong><CopyValue value={apt.apartmentCode} label="Kopiraj"/></div></div></section>
    <section className="card location"><div><p className="eyebrow">VAŠA LOKACIJA</p><h2><MapPin/> DivčiCasa B2</h2><p><strong>{apt.address}</strong></p></div><a className="btn" href={apt.maps} target="_blank">Pokreni navigaciju</a></section>
   <section className="gallery">
-  {Array.from({ length: 19 }, (_, i) => (
+ {Array.from({ length: 13 }, (_, i) => (
     <img
       key={i}
       src={`/images/B2-${String(i + 1).padStart(2, '0')}.webp`}
