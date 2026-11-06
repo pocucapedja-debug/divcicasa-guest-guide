@@ -193,7 +193,7 @@ export default function D10Page() {
            
             
 <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', marginTop: '12px' }}>
-  <a className="smallBtn" href="tel:+381646439776"
+ <a className="smallBtn" href="tel:+381646439776">📞 Pozovi restoran</a>
   <a className="smallBtn" href="https://maps.app.goo.gl/G2eXxA4KY4WizN959" target="_blank" rel="noopener noreferrer">📍 Lokacija</a>
 </div>
 </article>
