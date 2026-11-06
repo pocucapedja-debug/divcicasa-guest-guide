@@ -4,7 +4,7 @@ import { Wifi, Phone, MapPin, Star, Home, Utensils, Trees, MessageCircle, Copy, 
 
 const apt = {
   name:'Apartman F7', address:'Žike Pavlovića 21, Divčibare', wifiName:'A1_SRB_B9F7D3', wifiPassword:'4KFhG7Tf',
-  buildingCode:'0651#0651#', apartmentCode:'8657', phone:'+381 66 666 0015', phoneTel:'+381666660015',
+  buildingCode:'0651#0651#', apartmentCode:'2401', phone:'+381 66 666 0015', phoneTel:'+381666660015',
   maps:'https://maps.app.goo.gl/RB1aB7ypUF73GSGV6', review:'https://g.page/r/CXbmnuEzExJVEBM/review'
 }
 function CopyValue({value,label}) { const [ok,setOk]=useState(false); async function copy(){try{await navigator.clipboard.writeText(value);setOk(true);setTimeout(()=>setOk(false),1600)}catch{}} return <button className="copy" onClick={copy}>{ok?<Check size={17}/>:<Copy size={17}/>} {ok?'Kopirano':label}</button> }
