@@ -19,3 +19,17 @@ a[href^="tel:"].mapBtn {
   justify-content: center;
   min-height: 50px;
 }
+
+.smallBtn,
+a.smallBtn {
+  background-color: #173d31 !important;
+  color: #ffffff !important;
+  border: 2px solid #173d31 !important;
+  padding: 10px 16px !important;
+  border-radius: 12px !important;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none !important;
+  font-weight: 700 !important;
+}
