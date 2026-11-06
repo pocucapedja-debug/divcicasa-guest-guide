@@ -193,8 +193,8 @@ export default function D10Page() {
            
             
 <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', marginTop: '12px' }}>
-  <a href="tel:+381646439776">📞 Pozovi restoran</a>
-  <a href="https://maps.app.goo.gl/G2eXxA4KY4WizN959" target="_blank" rel="noopener noreferrer">📍 Lokacija</a>
+  <a className="smallBtn" href="tel:+381646439776"
+  <a className="smallBtn" href="https://maps.app.goo.gl/G2eXxA4KY4WizN959" target="_blank" rel="noopener noreferrer">📍 Lokacija</a>
 </div>
 </article>
 
@@ -205,8 +205,8 @@ export default function D10Page() {
               </p>
               
 <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', marginTop: '12px' }}>
-  <a href="tel:+381646439766">📞 Pozovi restoran</a>
-  <a href="https://maps.app.goo.gl/g3YKSQAkZYhcjATr6" target="_blank" rel="noopener noreferrer">📍 Lokacija</a>
+  <a className="smallBtn" href="tel:+381646439766">📞 Pozovi restoran</a>
+ <a className="smallBtn" href="https://maps.app.goo.gl/g3YKSQAkZYhcjATr6" target="_blank" rel="noopener noreferrer">📍 Lokacija</a>
 </div>
 
             </article>
@@ -224,7 +224,7 @@ export default function D10Page() {
               <h3>🛒 Maxi</h3>
               <p>Veća prodavnica za svakodnevnu kupovinu namirnica i potrepština.</p>
               
-<a
+<a className="smallBtn"
   href="https://www.google.com/maps/search/?api=1&query=Maxi+Divcibare"
   target="_blank"
   rel="noopener noreferrer"
@@ -238,7 +238,7 @@ export default function D10Page() {
               <h3>🛒 Jutro</h3>
               <p>Praktična prodavnica za osnovne namirnice i svakodnevne potrebe.</p>
               
-<a
+<a className="smallBtn"
   href="https://www.google.com/maps/search/?api=1&query=Dobro+jutro+prodavnica+Divcibare"
   target="_blank"
   rel="noopener noreferrer"
@@ -252,7 +252,7 @@ export default function D10Page() {
               <h3>🛍 Breza Shop</h3>
               <p>Lokalni proizvodi i praktične stvari za boravak na Divčibarama.</p>
               
-<a
+<a className="smallBtn"
   href="https://maps.app.goo.gl/PWYtgKjM7LgqCSMj6"
   target="_blank"
   rel="noopener noreferrer"
