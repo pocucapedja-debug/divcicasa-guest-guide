@@ -29,6 +29,15 @@ export const apartments = {
     name: 'Apartman B1',
     wifiName: 'divcigorab1',
     wifiPassword: 'divcigorab12021',
+ 
     hostPhoneWa: '381666660015'
+  },
+  e9: {
+    id: 'e9',
+    name: 'Apartman E9',
+    wifiName: 'ApartmanE9',
+    wifiPassword: 'apartmane9',
+    hostPhoneWa: '381666660015',
+    reviewUrl: 'https://www.google.com/maps/place//@44.1089051,20.0011781,17z/data=!3m1!4b1!4m3!3m2!1s0x4759dde431e5dc7f:0x55121333e19ee676!12e1'
   }
 }
