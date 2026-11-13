@@ -15,7 +15,19 @@ const apt = {
   wifiPassword: 'apartmane9',
   phone: '+381 66 666 0015',
   phoneTel: '+381666660015',
-  maps: 'https://maps.app.goo.gl/juLXoDXFnbHZPidG9'
+  maps: 'https://maps.app.goo.gl/juLXoDXFnbHZPidG9',
+  
+images: [
+  '/images/e9-dnevna.jpg',
+  '/images/e9-spavaca.jpg',
+  '/images/e9-kuhinja.jpg',
+  '/images/e9-kupatilo.jpg',
+  '/images/e9-zgrada.jpg',
+  '/images/e9-dvoriste.jpg',
+  '/images/e9-dvoriste-rostilj.jpg',
+  '/images/e9-igraonica.jpg'
+],
+
 }
 
 function CopyValue({ value, label }) {
