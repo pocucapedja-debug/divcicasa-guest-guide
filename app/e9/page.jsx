@@ -69,6 +69,31 @@ export default function E9Page() {
       </header>
 
       <main>
+        
+<section style={{ padding: '20px 0' }}>
+  <h2>Fotografije apartmana E9</h2>
+  <div style={{
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
+    gap: '12px',
+    marginTop: '16px'
+  }}>
+    {apt.images.map((slika, index) => (
+      <img
+        key={index}
+        src={slika}
+        alt={`Apartman E9 - fotografija ${index + 1}`}
+        style={{
+          width: '100%',
+          height: '220px',
+          objectFit: 'cover',
+          borderRadius: '12px'
+        }}
+      />
+    ))}
+  </div>
+</section>
+
         <section className="quickGrid" aria-label="Brze akcije">
           <a href="#wifi"><Wifi /><span>Wi-Fi</span></a>
           <a href={apt.maps} target="_blank" rel="noreferrer">
