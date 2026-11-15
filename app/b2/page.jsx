@@ -4,7 +4,7 @@ import { Wifi, Phone, MapPin, Star, Home, Utensils, Trees, MessageCircle, Copy, 
 
 const apt = {
   name:'Apartman B2', address:'Poručnika Savičića i Radića 44, Divčibare', wifiName:'TP-LINK_8F62', wifiPassword:'40233116',
-    buildingCode:'1035#', apartmentCode:'2127#', phone:'+381 66 666 0015', phoneTel:'+381666660015',
+     phone:'+381 66 666 0015', phoneTel:'+381666660015',
  maps:'https://maps.app.goo.gl/SbMnqvC1ALekNn3z6?g_st=iwb', review:'https://g.page/r/CXbmnuEzExJVEBM/review'
 }
 function CopyValue({value,label}) { const [ok,setOk]=useState(false); async function copy(){try{await navigator.clipboard.writeText(value);setOk(true);setTimeout(()=>setOk(false),1600)}catch{}} return <button className="copy" onClick={copy}>{ok?<Check size={17}/>:<Copy size={17}/>} {ok?'Kopirano':label}</button> }
@@ -46,7 +46,12 @@ export default function ApartmentPage(){
 </div>
     
   </div>
-</section>   <section className="card"><p className="eyebrow">ULAZAK U APARTMAN</p><h2>🔑 Pristupne šifre</h2><div className="codeGrid"><div><span>Ulaz u zgradu</span><strong>{apt.buildingCode}</strong><CopyValue value={apt.buildingCode} label="Kopiraj"/></div><div><span>Ulaz u apartman</span><strong>{apt.apartmentCode}</strong><CopyValue value={apt.apartmentCode} label="Kopiraj"/></div></div></section>
+</section>   <section className="card">
+  <p className="eyebrow">ULAZAK U APARTMAN</p>
+  <h2>🔑 Pristup apartmanu</h2>
+  <p>Šifru za ulazak u zgradu i apartman dobićete u poruci pre dolaska.</p>
+  <p>Ako imate bilo kakav problem sa ulaskom, kontaktirajte nas putem WhatsApp-a ili telefonom.</p>
+</section>
    <section className="card location"><div><p className="eyebrow">VAŠA LOKACIJA</p><h2><MapPin/> DivčiCasa B2</h2><p><strong>{apt.address}</strong></p></div><a className="btn" href={apt.maps} target="_blank">Pokreni navigaciju</a></section>
   <section className="gallery">
  {Array.from({ length: 13 }, (_, i) => (
