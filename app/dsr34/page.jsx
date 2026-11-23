@@ -181,7 +181,11 @@ dobićete privatnom porukom putem WhatsApp-a pre dolaska.
           <h2><Home /> Važne informacije</h2>
 
           <div className="rules">
-            <div>🚭 <b>Pušenje nije dozvoljeno u apartmanu.</b></div>
+         
+<div>🕑 <b>Check-in:</b> od 14:00</div>
+<div>🕚 <b>Check-out:</b> do 11:00</div>
+<div>🕰️ Ako nije rezervisan sledeći termin, rado ćemo omogućiti kasniji izlazak uz prethodni dogovor.</div>
+   <div>🚭 <b>Pušenje nije dozvoljeno u apartmanu.</b></div>
             <div>🔇 Molimo za mir nakon 22h.</div>
             <div>🚪 Pri izlasku proverite da li su vrata zaključana.</div>
             <div>♻️ Pomozite nam da zajedno čuvamo prirodu Divčibara.</div>
