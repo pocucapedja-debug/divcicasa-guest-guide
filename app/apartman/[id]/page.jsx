@@ -4,7 +4,7 @@ import { Wifi, Phone, MapPin, Star, Home, Utensils, Trees, MessageCircle, Copy, 
 
 const apt = {
   name:'Apartman F7', address:'Žike Pavlovića 21, Divčibare', wifiName:'A1_SRB_B9F7D3', wifiPassword:'4KFhG7Tf',
-  buildingCode:'0651#0651#', apartmentCode:'2401', phone:'+381 66 666 0015', phoneTel:'+381666660015',
+  phone:'+381 66 666 0015', phoneTel:'+381666660015',
   maps:'https://maps.app.goo.gl/RB1aB7ypUF73GSGV6', review:'https://g.page/r/CXbmnuEzExJVEBM/review'
 }
 function CopyValue({value,label}) { const [ok,setOk]=useState(false); async function copy(){try{await navigator.clipboard.writeText(value);setOk(true);setTimeout(()=>setOk(false),1600)}catch{}} return <button className="copy" onClick={copy}>{ok?<Check size={17}/>:<Copy size={17}/>} {ok?'Kopirano':label}</button> }
@@ -49,7 +49,20 @@ export default function ApartmentPage(){
       }}
     />
   </div>
-</section>   <section className="card"><p className="eyebrow">ULAZAK U APARTMAN</p><h2>🔑 Pristupne šifre</h2><div className="codeGrid"><div><span>Ulaz u zgradu</span><strong>{apt.buildingCode}</strong><CopyValue value={apt.buildingCode} label="Kopiraj"/></div><div><span>Ulaz u apartman</span><strong>{apt.apartmentCode}</strong><CopyValue value={apt.apartmentCode} label="Kopiraj"/></div></div></section>
+
+<section className="card">
+  <p className="eyebrow">ULAZAK U APARTMAN</p>
+  <h2>🔑 Pristup apartmanu</h2>
+  <p>
+    Informacije i šifre za ulazak u zgradu i apartman
+    dobićete privatnom porukom putem WhatsApp-a pre dolaska.
+  </p>
+  <p>
+    Ako imate problem sa ulaskom, kontaktirajte nas
+    putem WhatsApp-a ili telefonom.
+  </p>
+</section>
+
    <section className="card location"><div><p className="eyebrow">VAŠA LOKACIJA</p><h2><MapPin/> DivčiCasa F7</h2><p><strong>{apt.address}</strong></p></div><a className="btn" href={apt.maps} target="_blank">Pokreni navigaciju</a></section>
    <section className="gallery"><img src="/images/f7-living.webp"/><img src="/images/f7-kitchen.webp"/><img src="/images/f7-bedroom.webp"/><img src="/images/f7-terrace.webp"/><img src="/images/f7-bathroom.webp"/><img src="/images/f7-playground.jpg"/></section>
    <section className="card"><p className="eyebrow">TOKOM BORAVKA</p><h2><Home/> Važne informacije</h2><div className="rules"><div>🕑 <b>Check‑in:</b> od 14:00</div><div>🕚 <b>Check‑out:</b> do 11:00</div><div>🕰 Ako nije rezervisan sledeći termin, rado ćemo omogućiti kasniji izlazak uz prethodni dogovor.</div><div>🚭 Pušenje nije dozvoljeno u apartmanu.</div><div>🔇 Molimo za mir posle 22:00.</div><div>🚪 Pri izlasku zaključajte vrata.</div><div>♻️ Čuvajmo prirodu i okolinu Divčibara.</div></div></section>
