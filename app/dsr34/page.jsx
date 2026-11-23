@@ -12,8 +12,7 @@ const apt = {
   address: 'DSR Divčigora, Divčibare',
   wifiName: 'Apartman34',
   wifiPassword: 'apartman34',
-  buildingCode: '1#6248#',
-  apartmentCode: '5232',
+ 
   phone: '+381 66 666 0015',
   phoneTel: '+381666660015',
   maps: 'https://maps.app.goo.gl/Xm6QaGzTzLEnea2U7',
@@ -138,8 +137,10 @@ export default function DSR34Page() {
           <h2><Home /> Pristup apartmanu</h2>
 
         <p>
-  Šifra za ulazak u zgradu: <strong>1#6248#</strong><br />
-  Šifra apartmana DSR34: <strong>5232</strong>
+ 
+Informacije i šifre za ulazak u zgradu i apartman
+dobićete privatnom porukom putem WhatsApp-a pre dolaska.
+
 </p>
 
           <p>
