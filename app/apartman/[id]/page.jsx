@@ -50,6 +50,8 @@ export default function ApartmentPage(){
     />
   </div>
 
+</section>
+
 <section className="card">
   <p className="eyebrow">ULAZAK U APARTMAN</p>
   <h2>🔑 Pristup apartmanu</h2>
