@@ -13,8 +13,7 @@ const apt = {
   floor: 'Prvi sprat',
   wifiName: 'Divcicasa25',
   wifiPassword: 'apartman25',
-  buildingCode: '1#6248#',
-  apartmentCode: '1234',
+ 
   phone: '+381 66 666 0015',
   phoneTel: '+381666660015',
   maps: 'https://maps.app.goo.gl/Xm6QaGzTzLEnea2U7',
@@ -134,8 +133,8 @@ export default function DSR25Page() {
           <h2><Home /> Pristup apartmanu</h2>
 
         <p>
-  Šifra za ulazak u zgradu: <strong>1#6248#</strong><br />
-  Šifra apartmana DSR25: <strong>2314</strong>
+ Informacije i šifre za ulazak u zgradu i apartman
+dobićete privatnom porukom putem WhatsApp-a pre dolaska.
 </p>
 
           <p>
@@ -175,7 +174,9 @@ export default function DSR25Page() {
           <p className="eyebrow">TOKOM BORAVKA</p>
           <h2><Home /> Važne informacije</h2>
 
-          <div className="rules">
+          <div className="rules"><div>🕑 <b>Check-in:</b> od 14:00</div>
+<div>🕚 <b>Check-out:</b> do 11:00</div>
+<div>🕰️ Ako nije rezervisan sledeći termin, rado ćemo omogućiti kasniji izlazak uz prethodni dogovor.</div>
             <div>🚭 <b>Pušenje nije dozvoljeno u apartmanu.</b></div>
             <div>🔇 Molimo za mir nakon 22h.</div>
             <div>🚪 Pri izlasku proverite da li su vrata zaključana.</div>
